@@ -46,87 +46,36 @@ def check_user(username):
 
 def gen_user(choice):
     if choice == "1":
+        c =if choice == "1":
         c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
-        f =  [c[0], d[0], s[0], s[0], s[0]]
+        s = random.choices(e)
+        f = [c[0], s[0]]
+        random.shuffle(f)
         username = ''.join(f)
+        username = username+'888'
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], d[0], s[0], s[0], s[0]]
+            s = random.choices(e)
+            f = [c[0], s[0]]
+            random.shuffle(f)
             username = ''.join(f)
+            username = username+'888'
         else:
             pass
     if choice == "2":
         c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
-        f =  [c[0], d[0], s[0], s[0], s[0], s[0]]
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], d[0], s[0], s[0], s[0], s[0]]
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "3":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
-        f =  [c[0], s[0], s[0], s[0], d[0]]
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], s[0], s[0], s[0], d[0]]
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "4":
-        c = random.choices(a)
-        d = random.choices(e)
         s = random.choices(e)
-        f =  [c[0], d[0], s[0], s[0], s[0]]
+        f = [c[0], s[0]]
+        random.shuffle(f)
         username = ''.join(f)
+        username = username+'8888'
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(e)
             s = random.choices(e)
-            f =  [c[0], d[0], s[0], s[0], s[0]]
+            f = [c[0], s[0]]
+            random.shuffle(f)
             username = ''.join(f)
-        else:
-            pass
-    if choice == "5":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f =  [c[0], s[0], s[0], s[0], d[0]]
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(e)
-            f =  [c[0], s[0], s[0], s[0], d[0]]
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "10":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f =  [c[0], d[0], d[0]]
-        username+'888' = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(e)
-            f =  [c[0], d[0], d[0]]
-            username+'888' = ''.join(f)
+            username = username+'8888'
         else:
             pass
     return username
@@ -190,7 +139,7 @@ async def _(event):
                     await event.client.send_file(event.chat_id, "https://t.me/aaxxxa/158",caption=f'''
 𝚝𝚑𝚎 𝚔𝚒𝚗𝚐 ↬ @u0uu0
 𝚞𝚜𝚎𝚛 ↬ (@{username})
-𝚋𝚢 ↬ @i_m_q ↬ @aaxxxa
+𝚋𝚢 ↬ @i_m_q
 𝚕𝚘𝚘𝚙𝚜 ↬  {trys}
     ''')
                     break
